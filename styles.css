@@ -22,6 +22,12 @@ nav{
   justify-content: space-between;
   font-weight: 600;
 } 
+
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 20px; 
+  }
+}
 nav .logo img{
   width: 40px;
   height: 40px;
@@ -89,6 +95,21 @@ width: 100%;}
 .recent{
   padding: 60px 148px;
   background-color:#dbedf2;
+}
+[class*="col-"] {
+  width: 100%;
+}
+
+/* Add tablet breakpoint */
+@media only screen and (min-width: 600px) {
+  .col-s-1 { width: 8.33%; }
+  /* ... Adjust other column widths as needed */
+}
+
+/* Add desktop breakpoint */
+@media only screen and (min-width: 768px) {
+  .col-1 { width: 8.33%; }
+  /* ... Adjust other column widths as needed */
 }
 .recent .header{
 display: flex;
